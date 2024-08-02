@@ -1,14 +1,14 @@
 {
   "name": "yammies-eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "keywords": [],
   "author": "",
-  "main": "configs/base.js",
+  "main": "index.js",
   "exports": {
-    ".": "./configs/base.js",
-    "./base": "./configs/base.js",
-    "./react": "./configs/react.js"
+    ".": "./index.js",
+    "./base": "./index.js",
+    "./react": "./react.js"
   },
   "scripts": {
     "release": "release-it"

@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    require.resolve("./base.js"),
+    require.resolve("./index.js"),
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
