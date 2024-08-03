@@ -8,6 +8,15 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
+  globals: {
+    process: true,
+  },
+  env: {
+    es6: true,
+    browser: true,
+    amd: true,
+    node: true,
+  },
   ignorePatterns: ['dist', '.eslintrc.cjs', '.eslintrc.js', 'node_modules'],
   parser: '@typescript-eslint/parser',
   plugins: [
