@@ -27,7 +27,10 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: [],
+  plugins: [
+    'react',
+    'react-hooks'
+  ],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
