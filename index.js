@@ -127,9 +127,17 @@ module.exports = {
       },
     },
     {
-      files: ['./*.config.js', './*.config.ts', './*.config.cjs', './*.config.json', './*config.json', './*config.*.json'],
+      files: [
+        './*.config.js', 
+        './*.config.ts', 
+        './*.config.cjs', 
+        './*.config.json', 
+        './*config.json',
+        './*config.*.json'
+      ],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
+        'import/default': 'off',
       },
     }
   ],
