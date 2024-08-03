@@ -8,17 +8,25 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  globals: {
-    process: true,
-  },
-  env: {
-    es6: true,
-    browser: true,
-    amd: true,
-    node: true,
-  },
-  ignorePatterns: ['dist', '.eslintrc.cjs', '.eslintrc.js', 'node_modules'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
+  ignorePatterns: [
+    'public*',
+    'node_modules',
+    'dist',
+    'build',
+    '.vscode',
+    '.kube',
+    '.idea',
+    '.dockerignore',
+    '.gitlab-ci.yml',
+    'nginx.conf',
+    'jsconfig.json',
+    '*.json',
+  ],
   plugins: [
     'prettier',
     '@typescript-eslint'
@@ -35,6 +43,15 @@ module.exports = {
         alwaysTryTypes: true,
       },
     },
+  },
+  globals: {
+    process: true,
+  },
+  env: {
+    es6: true,
+    browser: true,
+    amd: true,
+    node: true,
   },
   rules: {
     'prettier/prettier': [
@@ -76,6 +93,8 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-namespace': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
     'import/order': [
       'error',
       {
@@ -99,16 +118,16 @@ module.exports = {
   overrides: [
     {
       files: [
-        "**/.eslintrc.js",
+        '*{spec, test, tests, stories}.*',
+        '**/__tests__/**',
+        '**/__stories__/**',
       ],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/unbound-method': 'off',
       },
     },
     {
-      files: [
-        "**/*.cjs",
-      ],
+      files: ['./*.config.js', './*.config.ts', './*.config.cjs', './*.config.json', './*config.json', './*config.*.json'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
