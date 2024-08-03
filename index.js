@@ -32,6 +32,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   settings: {
+    'import/extensions': ['.ts', '.tsx'], // THIS GIVES A MAJOR PERFORMANCE BOOST
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.js'],
     },
