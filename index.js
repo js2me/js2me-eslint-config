@@ -55,11 +55,12 @@ module.exports = {
     node: true,
   },
   rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
     'prettier/prettier': [
       'error',
       {
         endOfLine: 'auto',
-        printWidth: 120,
+        printWidth: 80,
         singleQuote: true,
       },
     ],
@@ -92,7 +93,6 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-namespace': 'off',
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
