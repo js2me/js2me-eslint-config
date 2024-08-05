@@ -26,13 +26,15 @@ module.exports = {
     'nginx.conf',
     'jsconfig.json',
     '*.json',
+    '**/__generated__/**',
+    '__generated__.*'
   ],
   plugins: [
     'prettier',
     '@typescript-eslint'
   ],
   settings: {
-    'import/extensions': ['.ts', '.tsx'], // THIS GIVES A MAJOR PERFORMANCE BOOST
+    'import/extensions': ['.ts'], // THIS GIVES A MAJOR PERFORMANCE BOOST
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.js'],
     },
