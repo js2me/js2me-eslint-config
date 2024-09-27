@@ -10,6 +10,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    project: 'tsconfig.json',
   },
   settings: {
     'import/extensions': ['.ts', '.tsx'], // THIS GIVES A MAJOR PERFORMANCE BOOST
@@ -22,6 +23,7 @@ module.exports = {
       },
       typescript: {
         alwaysTryTypes: true,
+        project: 'tsconfig.json',
       },
     },
     react: {

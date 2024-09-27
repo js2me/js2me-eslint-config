@@ -1,9 +1,9 @@
 {
   "name": "js2me-eslint-config",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "",
+  "author": "js2me",
   "main": "index.js",
   "exports": {
     ".": "./index.js",

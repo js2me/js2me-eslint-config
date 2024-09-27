@@ -33,6 +33,9 @@ module.exports = {
     'prettier',
     '@typescript-eslint'
   ],
+  parserOptions: {
+    project: 'tsconfig.json',
+  },
   settings: {
     'import/extensions': ['.ts'], // THIS GIVES A MAJOR PERFORMANCE BOOST
     'import/parsers': {
@@ -44,6 +47,7 @@ module.exports = {
       },
       typescript: {
         alwaysTryTypes: true,
+        project: 'tsconfig.json',
       },
     },
   },
@@ -69,6 +73,7 @@ module.exports = {
     'import/no-unresolved': ['error'],
     'no-duplicate-imports': 'error',
     'no-trailing-spaces': 'error',
+    '@typescript-eslint/no-unnecessary-template-expression': 'error',
     'no-multiple-empty-lines': [
       'error',
       {
