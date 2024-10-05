@@ -47,5 +47,6 @@ module.exports = {
     'sonarjs/sonar-prefer-read-only-props': 'off',
     'sonarjs/jsx-no-useless-fragment': 'off',
     'sonarjs/rules-of-hooks': 'off',
+    'sonarjs/no-unstable-nested-components': 'off',
   },
 }

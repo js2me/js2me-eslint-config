@@ -70,6 +70,7 @@ module.exports = {
     'unicorn/prefer-add-event-listener': 'off',
     'unicorn/prefer-ternary': 'off',
     'unicorn/no-array-reduce': 'off',
+    'unicorn/prefer-export-from': 'off',
     "unicorn/prevent-abbreviations": [
       "error",
       {
@@ -77,20 +78,33 @@ module.exports = {
           "getInitialProps": true,
           "props": true,
           "lib": true,
+          "libs": true,
+          "env": true,
+          "Libs": true,
+          "Envs": true,
           "acc": true,
           "params": true,
           "Params": true,
           "Props": true,
+          "Prop": true,
+          "prop": true,
+          "Doc": true,
+          "doc": true,
+          "Docs": true,
+          "docs": true,
           "Lib": true,
-          "args": true
+          "args": true,
+          "Args": true
         }
       }
     ],
 
     'sonarjs/function-return-type': 'off',
+    'sonarjs/different-types-comparison': 'off',
+    'sonarjs/no-nested-template-literals': 'off',
+    'sonarjs/no-redeclare': 'off',
     'sonarjs/cognitive-complexity': 'warn',
-    'unicorn/prefer-export-from': 'off',
-
+    'sonarjs/prefer-single-boolean-return': 'off',
     'sonarjs/no-misused-promises': 'off',
     'sonarjs/mouse-events-a11y': 'off',
 
