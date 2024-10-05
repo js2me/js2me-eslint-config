@@ -1,11 +1,8 @@
-const eslintPluginUnicorn = require('eslint-plugin-unicorn')
-
 module.exports = {
   plugins: [
     "sonarjs",
     'prettier',
-    '@typescript-eslint',
-    eslintPluginUnicorn
+    '@typescript-eslint'
   ],
   extends: [
     'eslint:recommended',
@@ -16,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:sonarjs/recommended-legacy',
-    eslintPluginUnicorn.configs['flat/all'],
+    'plugin:unicorn/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -67,6 +64,36 @@ module.exports = {
     node: true,
   },
   rules: {
+    'unicorn/no-null': 'off',
+    'unicorn/no-array-for-each': 'off',
+    'unicorn/no-array-callback-reference': 'off',
+    'unicorn/prefer-add-event-listener': 'off',
+    'unicorn/prefer-ternary': 'off',
+    'unicorn/no-array-reduce': 'off',
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "allowList": {
+          "getInitialProps": true,
+          "props": true,
+          "lib": true,
+          "acc": true,
+          "params": true,
+          "Params": true,
+          "Props": true,
+          "Lib": true,
+          "args": true
+        }
+      }
+    ],
+
+    'sonarjs/function-return-type': 'off',
+    'sonarjs/cognitive-complexity': 'warn',
+    'unicorn/prefer-export-from': 'off',
+
+    'sonarjs/no-misused-promises': 'off',
+    'sonarjs/mouse-events-a11y': 'off',
+
     '@typescript-eslint/no-explicit-any': 'off',
     'prettier/prettier': [
       'error',

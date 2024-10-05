@@ -38,9 +38,14 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
     'react/prop-types': 'off',
+    'react-hooks/exhaustive-deps': 'off',
     'react/jsx-curly-brace-presence': [
       'error',
       { props: 'always', children: 'ignore' },
     ],
+
+    'sonarjs/sonar-prefer-read-only-props': 'off',
+    'sonarjs/jsx-no-useless-fragment': 'off',
+    'sonarjs/rules-of-hooks': 'off',
   },
 }
