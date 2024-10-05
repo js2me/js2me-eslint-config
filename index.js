@@ -88,6 +88,8 @@ module.exports = {
           "Props": true,
           "Prop": true,
           "prop": true,
+          "Ref": true,
+          "ref": true,
           "Doc": true,
           "doc": true,
           "Docs": true,
@@ -98,7 +100,7 @@ module.exports = {
         }
       }
     ],
-
+    
     'sonarjs/function-return-type': 'off',
     'sonarjs/different-types-comparison': 'off',
     'sonarjs/no-nested-template-literals': 'off',
@@ -107,6 +109,7 @@ module.exports = {
     'sonarjs/prefer-single-boolean-return': 'off',
     'sonarjs/no-misused-promises': 'off',
     'sonarjs/mouse-events-a11y': 'off',
+    'sonarjs/no-selector-parameter': 'off',
 
     '@typescript-eslint/no-explicit-any': 'off',
     'prettier/prettier': [
