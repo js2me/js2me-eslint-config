@@ -1,4 +1,12 @@
+const eslintPluginUnicorn = require('eslint-plugin-unicorn')
+
 module.exports = {
+  plugins: [
+    "sonarjs",
+    'prettier',
+    '@typescript-eslint',
+    eslintPluginUnicorn
+  ],
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
@@ -7,6 +15,8 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:sonarjs/recommended-legacy',
+    eslintPluginUnicorn.configs['flat/all'],
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -28,10 +38,6 @@ module.exports = {
     '*.json',
     '**/__generated__/**',
     '__generated__.*'
-  ],
-  plugins: [
-    'prettier',
-    '@typescript-eslint'
   ],
   parserOptions: {
     project: 'tsconfig.json',
