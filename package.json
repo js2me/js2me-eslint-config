@@ -10,7 +10,9 @@
     "./base": "./index.js",
     "./react": "./react.js"
   },
-  "scripts": {},
+  "scripts": {
+    "pub": "npm publish"
+  },
   "license": "ISC",
   "peerDependencies": {
     "eslint": "^8.57.0",
