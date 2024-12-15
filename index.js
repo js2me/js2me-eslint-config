@@ -211,6 +211,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/no-this-alias': 'off',
         'react-hooks/rules-of-hooks': 'off',
+        'sonarjs/no-unused-expressions': 'off',
       },
       parserOptions: {
         project: 'tsconfig.test.json',
